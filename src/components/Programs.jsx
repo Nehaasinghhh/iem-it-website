@@ -1,168 +1,73 @@
 import {
-  GraduationCap,
-  BookOpen,
-  Cpu,
-  Microscope,
+  Clock3,
+  ScrollText,
+  Building2,
 } from "lucide-react";
 
 export default function Programs() {
-  const programs = [
+  const cards = [
     {
-      icon: <GraduationCap size={40} />,
-      title: "B.Tech in Information Technology",
-      duration: "4 Years",
-      color: "from-blue-700 to-blue-500",
-      points: [
-        "Programming using C, C++, Java & Python",
-        "Web Development & Mobile App Development",
-        "Artificial Intelligence & Machine Learning",
-        "Database Management Systems",
-        "Software Engineering",
-        "Cloud Computing",
-      ],
+      icon: <Clock3 size={70} strokeWidth={1.5} />,
+      title: "Routine",
+      description:
+        "Comprehensive academic schedules for 2nd, 3rd, and 4th-year students, balancing coursework, labs, and hands-on learning.",
     },
     {
-      icon: <BookOpen size={40} />,
-      title: "M.Tech in Information Technology",
-      duration: "2 Years",
-      color: "from-indigo-700 to-indigo-500",
-      points: [
-        "Advanced Software Engineering",
-        "Big Data Analytics",
-        "Cyber Security",
-        "Cloud Architecture",
-        "Research Methodology",
-        "Industry Projects",
-      ],
+      icon: <ScrollText size={70} strokeWidth={1.5} />,
+      title: "Curriculum",
+      description:
+        "A comprehensive and industry-aligned syllabus designed to equip 2nd, 3rd, and 4th-year students with essential technical and analytical skills.",
     },
     {
-      icon: <Cpu size={40} />,
-      title: "Industry Training",
-      duration: "Professional Development",
-      color: "from-cyan-700 to-cyan-500",
-      points: [
-        "Internship Opportunities",
-        "Hackathons",
-        "Coding Competitions",
-        "Industrial Visits",
-        "Placement Preparation",
-        "Certification Programs",
-      ],
-    },
-    {
-      icon: <Microscope size={40} />,
-      title: "Research & Innovation",
-      duration: "Innovation Cell",
-      color: "from-purple-700 to-purple-500",
-      points: [
-        "Research Publications",
-        "AI & ML Projects",
-        "IoT Applications",
-        "Patent Filing",
-        "Start-up Incubation",
-        "Innovation Labs",
-      ],
+      icon: <Building2 size={70} strokeWidth={1.5} />,
+      title: "Infrastructure",
+      description:
+        "A state-of-the-art campus featuring advanced labs, modern classrooms, and collaborative learning spaces to foster innovation and growth.",
     },
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="bg-slate-100 py-24 px-6">
+      <div className="max-w-7xl mx-auto">
 
-      <div className="container mx-auto px-6">
+        {/* Heading */}
+        <div className="text-center mb-20">
 
-        <div className="text-center max-w-3xl mx-auto">
-
-          <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">
-            PROGRAMS OFFERED
-          </span>
-
-          <h2 className="text-5xl font-bold mt-6 text-slate-900">
-            Academic Programs
-          </h2>
-
-          <p className="mt-6 text-lg text-gray-600 leading-8">
-            The Department of Information Technology offers
-            industry-oriented programs designed to build
-            technical expertise, innovation, leadership,
-            and research capabilities.
+          <p className="uppercase tracking-[4px] text-lg text-gray-700">
+            Learn Anything
           </p>
+
+          <h2 className="mt-6 text-4xl md:text-6xl font-light text-slate-900">
+            Empowering Minds, Shaping Futures
+          </h2>
 
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 mt-16">
+        {/* Cards */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-          {programs.map((program, index) => (
-
+          {cards.map((card, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition duration-300 overflow-hidden border border-slate-200"
+              className="bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all duration-500"
             >
-
-              <div
-                className={`bg-gradient-to-r ${program.color} text-white p-8`}
-              >
-
-                <div className="mb-4">
-
-                  {program.icon}
-
-                </div>
-
-                <h3 className="text-2xl font-bold">
-
-                  {program.title}
-
-                </h3>
-
-                <p className="mt-2 opacity-90">
-
-                  {program.duration}
-
-                </p>
-
+              <div className="mb-8 text-slate-900">
+                {card.icon}
               </div>
 
-              <div className="p-8">
+              <h3 className="text-3xl font-bold text-slate-900 mb-5">
+                {card.title}
+              </h3>
 
-                <ul className="space-y-4">
-
-                  {program.points.map((point) => (
-
-                    <li
-                      key={point}
-                      className="flex items-start gap-3"
-                    >
-
-                      <div className="w-2 h-2 rounded-full bg-blue-700 mt-3"></div>
-
-                      <span className="text-gray-700">
-
-                        {point}
-
-                      </span>
-
-                    </li>
-
-                  ))}
-
-                </ul>
-
-                <button className="mt-8 bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition">
-
-                  Learn More
-
-                </button>
-
-              </div>
-
+              <p className="text-gray-500 text-lg leading-9">
+                {card.description}
+              </p>
             </div>
-
           ))}
 
         </div>
 
       </div>
-
     </section>
   );
 }

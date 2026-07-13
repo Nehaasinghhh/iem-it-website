@@ -26,9 +26,9 @@ export default function Navbar() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Academics", path: "/academics" },
-    { name: "Students", path: "#" },
+    {name:"Students",path:"/students"},
     { name: "Faculty", path: "/faculty" },
-    { name: "Innovation & Initiatives", path: "#" },
+    { name: "Innovation & Initiatives", path: "innovation & Initiatives" }
     
   ];
 

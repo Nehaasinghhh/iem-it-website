@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 import Academics from "./pages/Academics";
+import Students from "./pages/Students";
 import Faculty from "./pages/Faculty";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/academics" element={<Academics />} />
+        <Route path="/students" element={<Students />} />
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFound />} />
