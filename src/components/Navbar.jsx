@@ -36,11 +36,11 @@ export default function Navbar() {
     <>
       {/* Header Section */}
       <header className="bg-gradient-to-r from-blue-950 via-blue-900 to-blue-700 text-white">
-        <div className="container mx-auto px-5">
+        <div className="container mx-auto px-8">
           <div className="flex justify-between items-center py-8">
 
             {/* Logo + Title */}
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-8">
 
               <img
                 src={logo}
@@ -52,7 +52,7 @@ export default function Navbar() {
                 md:h-24 
                 bg-white 
                 rounded-lg 
-                p-2 
+                p-10
                 object-contain
                 shadow-lg
                 "
@@ -237,7 +237,7 @@ export default function Navbar() {
       {/* Space when navbar becomes fixed */}
       {
         sticky && (
-          <div className="h-[72px]"></div>
+          <div className="h-[90px]"></div>
         )
       }
 
