@@ -40,28 +40,18 @@ export default function Navbar() {
           <div className="flex justify-between items-center py-8">
 
             {/* Logo + Title */}
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-5">
 
               <img
-                src={logo}
-                alt="IEM Logo"
-                className="
-                w-20 
-                h-20 
-                md:w-24 
-                md:h-24 
-                bg-white 
-                rounded-lg 
-                p-10
-                object-contain
-                shadow-lg
-                "
-              />
+  src={logo}
+  alt="IEM Logo"
+  className="w-40 h-40 object-contain"
+/>
 
               <div>
                 <h1 className="
                 text-2xl 
-                md:text-4xl 
+                md:text-5xl 
                 font-bold 
                 leading-tight
                 ">
