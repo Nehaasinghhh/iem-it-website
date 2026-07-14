@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="bg-white">
 
       {/* Newsletter Section */}
-      <div className="bg-blue-700 py-12 px-6">
+      <div className="bg-[#0B3D91] text-white text-sm">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
 
           <div>

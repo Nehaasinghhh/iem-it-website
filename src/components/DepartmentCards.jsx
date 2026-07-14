@@ -34,7 +34,7 @@ export default function DepartmentCards() {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 py-20 px-6">
+  <section className="bg-[#061F52F] py-10">
 
       {/* Heading */}
       <div className="text-center text-white mb-16">

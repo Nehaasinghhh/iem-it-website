@@ -1,35 +1,30 @@
 import Navbar from "../components/Navbar";
-import Programs from "../components/Programs";
+import InnovationCards from "../components/InnovationCards";
 import Footer from "../components/Footer";
-import { useNavigate } from "react-router-dom";
 
-export default function Academics() {
+export default function Innovation() {
   return (
     <>
       <Navbar />
 
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 py-24 text-white">
-
         <div className="container mx-auto text-center">
 
           <h1 className="text-5xl font-bold">
-
-            Academics
-
+            Innovation & Initiatives
           </h1>
 
-          <p className="mt-5 text-lg">
-            Explore the academic programmes offered by the Department.
+          <p className="mt-6 text-lg">
+            Unleashing creativity and transforming ideas into reality through
+            research, innovation and academic excellence.
           </p>
 
         </div>
-
       </section>
 
-      <Programs />
+      <InnovationCards />
 
       <Footer />
-
     </>
   );
 }

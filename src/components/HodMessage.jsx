@@ -4,7 +4,7 @@ import hodImage from "../assets/images/hod_img.jpg";
 
 export default function HodMessage() {
   return (
-    <section className="bg-gray-100 py-16 px-6">
+   <section className="bg-[#EEF4FB] py-10">
 
       {/* Heading */}
       <div className="text-center mb-10">
