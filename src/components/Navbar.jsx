@@ -57,13 +57,10 @@ export default function Navbar() {
       ],
     },
 
-    {
-      name: "Faculty",
-      dropdown: [
-        { name: "Faculty Publication", path: "/faculty-publication" },
-        { name: "Annual Report", path: "/annual-report" },
-      ],
-    },
+   {
+  name: "Faculty",
+  path: "/faculty",
+},
 
     {
       name: "Innovation & Initiatives",

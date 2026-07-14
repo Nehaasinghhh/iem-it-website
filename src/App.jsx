@@ -45,6 +45,10 @@ export default function App() {
         <Route path="/innovation" element={<Innovation />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/vision-mission" element={<VisionMission />} />
+        <Route
+  path="/curriculum"
+  element={<Curriculum />}
+/>
 <Route path="/po-peo-pso" element={<POPEOPSO />} />
 
 <Route path="/placement" element={<Placement />} />

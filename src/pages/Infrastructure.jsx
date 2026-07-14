@@ -12,61 +12,68 @@ import Lab3 from "../assets/images/Lab3.jpg";
 import Lab5 from "../assets/images/Lab5.jpg";
 
 export default function Infrastructure() {
-  const classrooms = [
-    class1,
-    class3,
-    class4,
-    class5,
-  ];
+  const classrooms = [class1, class3, class4, class5];
 
-  const labs = [
-    Lab1,
-    Lab2,
-    Lab3,
-    Lab5,
-  ];
+  const labs = [Lab1, Lab2, Lab3, Lab5];
 
   return (
     <>
       <Navbar />
 
-      <section className="min-h-screen bg-gradient-to-r from-blue-900 via-blue-700 to-cyan-500 py-20">
-
+      <section className="min-h-screen bg-[#eef4ff] py-20">
         <div className="container mx-auto px-6">
 
-          {/* Heading */}
-          <h1 className="text-center text-5xl md:text-6xl font-extrabold text-yellow-400 mb-20">
-            DEPARTMENT INFRASTRUCTURE
-          </h1>
+          {/* Page Heading */}
+          <div className="text-center mb-20">
+            <h1 className="text-5xl md:text-6xl font-bold text-blue-800">
+              Department Infrastructure
+            </h1>
 
-          {/* Modern Classrooms */}
-          <h2 className="text-center text-3xl md:text-4xl font-bold text-yellow-300 mb-12">
-            📚 MODERN CLASSROOMS
-          </h2>
+            <div className="w-40 h-1 bg-blue-700 mx-auto mt-5 rounded-full"></div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mb-24">
+            <p className="mt-6 text-lg text-slate-600 max-w-3xl mx-auto">
+              Modern classrooms and advanced laboratories equipped with
+              state-of-the-art facilities to support academic excellence,
+              innovation and research.
+            </p>
+          </div>
+
+          {/* Classrooms Section */}
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-blue-700">
+              Modern Classrooms
+            </h2>
+
+            <div className="w-28 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
 
             {classrooms.map((image, index) => (
               <div
                 key={index}
                 className="
-                overflow-hidden
-                rounded-3xl
-                border-2
-                border-white/30
-                shadow-2xl
+                  bg-white
+                  rounded-3xl
+                  overflow-hidden
+                  border
+                  border-blue-100
+                  shadow-lg
+                  hover:shadow-2xl
+                  transition-all
+                  duration-500
                 "
               >
                 <img
                   src={image}
                   alt={`Classroom ${index + 1}`}
                   className="
-                  w-full
-                  h-72
-                  object-cover
-                  hover:scale-110
-                  transition
-                  duration-500
+                    w-full
+                    h-72
+                    object-cover
+                    hover:scale-105
+                    transition-transform
+                    duration-500
                   "
                 />
               </div>
@@ -74,34 +81,42 @@ export default function Infrastructure() {
 
           </div>
 
-          {/* Advanced Labs */}
-          <h2 className="text-center text-3xl md:text-4xl font-bold text-yellow-300 mb-12">
-            💻 ADVANCED LABS
-          </h2>
+          {/* Labs Section */}
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-blue-700">
+              Advanced Laboratories
+            </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div className="w-28 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
             {labs.map((image, index) => (
               <div
                 key={index}
                 className="
-                overflow-hidden
-                rounded-3xl
-                border-2
-                border-white/30
-                shadow-2xl
+                  bg-white
+                  rounded-3xl
+                  overflow-hidden
+                  border
+                  border-blue-100
+                  shadow-lg
+                  hover:shadow-2xl
+                  transition-all
+                  duration-500
                 "
               >
                 <img
                   src={image}
                   alt={`Lab ${index + 1}`}
                   className="
-                  w-full
-                  h-72
-                  object-cover
-                  hover:scale-110
-                  transition
-                  duration-500
+                    w-full
+                    h-72
+                    object-cover
+                    hover:scale-105
+                    transition-transform
+                    duration-500
                   "
                 />
               </div>
@@ -110,7 +125,6 @@ export default function Infrastructure() {
           </div>
 
         </div>
-
       </section>
 
       <Footer />
