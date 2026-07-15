@@ -59,7 +59,7 @@ export default function App() {
 
         {/* Innovation Dropdown */}
         <Route path="/iem-iepc" element={<IEMIEPC />} />
-        <Route path="/hack" element={<IEMHackOasis />} />
+        <Route path="/IEMHackOasis" element={<IEMHackOasis />} />
         <Route
           path="/department-events"
           element={<DepartmentEvents />}
