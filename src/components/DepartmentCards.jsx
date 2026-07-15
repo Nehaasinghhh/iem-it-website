@@ -34,148 +34,127 @@ export default function DepartmentCards() {
   ];
 
   return (
-  <section className="bg-[#061F52F] py-10">
+    <section className="py-24 bg-slate-50">
+      <div className="container mx-auto px-6">
 
-      {/* Heading */}
-      <div className="text-center text-white mb-16">
+        {/* Heading */}
+        <div className="text-center mb-12">
 
-        <p className="text-lg uppercase tracking-widest">
-          Our Branch
-        </p>
-
-        <h2 className="text-4xl md:text-5xl font-semibold mt-4">
-          Explore Our Department
-        </h2>
-
-        <div className="w-20 h-1 bg-white mx-auto mt-5 rounded-full"></div>
-
-      </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mt-4">
+                Department Highlights
+          </h2>
 
 
-      {/* Cards */}
-      <div
-        className="
-        max-w-7xl
-        mx-auto
-        grid
-        grid-cols-1
-        sm:grid-cols-2
-        lg:grid-cols-4
-        gap-8
+          <div className="w-32 h-1 bg-blue-700 mx-auto mt-6 rounded-full"></div>
+
+        </div>
+
+        {/* Cards */}
+        <div
+          className="
+          max-w-7xl
+          mx-auto
+          grid
+          grid-cols-1
+          sm:grid-cols-2
+          lg:grid-cols-4
+          gap-8
         "
-      >
+        >
+          {departments.map((item, index) => {
+            const Icon = item.icon;
 
-        {departments.map((item,index)=>{
-
-          const Icon = item.icon;
-
-          return(
-
-            <div
-              key={index}
-              className="
-              bg-white
-              rounded-2xl
-              p-8
-              text-center
-              shadow-xl
-              transition-all
-              duration-500
-              hover:-translate-y-4
-              hover:shadow-2xl
-              group
-              flex
-              flex-col
-              items-center
-              "
-            >
-
-
-              {/* Icon */}
+            return (
               <div
+                key={index}
                 className="
-                w-20
-                h-20
-                rounded-full
-                bg-blue-600
-                flex
-                items-center
-                justify-center
-                mb-6
+                bg-white
+                rounded-2xl
+                p-8
+                text-center
+                shadow-xl
                 transition-all
                 duration-500
-                group-hover:bg-blue-700
-                group-hover:scale-110
-                "
+                hover:-translate-y-4
+                hover:shadow-2xl
+                group
+                flex
+                flex-col
+                items-center
+              "
               >
+                {/* Icon */}
+                <div
+                  className="
+                  w-20
+                  h-20
+                  rounded-full
+                  bg-blue-600
+                  flex
+                  items-center
+                  justify-center
+                  mb-6
+                  transition-all
+                  duration-500
+                  group-hover:bg-blue-700
+                  group-hover:scale-110
+                "
+                >
+                  <Icon
+                    size={38}
+                    className="text-white"
+                  />
+                </div>
 
-                <Icon
-                  size={38}
-                  className="text-white"
-                />
+                {/* Title */}
+                <h3
+                  className="
+                  text-xl
+                  font-bold
+                  text-gray-800
+                  mb-5
+                "
+                >
+                  {item.title}
+                </h3>
 
+                {/* Description */}
+                <p
+                  className="
+                  text-gray-600
+                  text-sm
+                  leading-7
+                  text-center
+                "
+                >
+                  {item.description}
+                </p>
+
+                {/* Button */}
+                <button
+                  className="
+                  mt-8
+                  w-full
+                  border-2
+                  border-blue-600
+                  text-blue-600
+                  py-3
+                  rounded-lg
+                  font-semibold
+                  transition-all
+                  duration-300
+                  hover:bg-blue-600
+                  hover:text-white
+                "
+                >
+                  EXPLORE !
+                </button>
               </div>
-
-
-
-              {/* Title */}
-              <h3
-                className="
-                text-xl
-                font-bold
-                text-gray-800
-                mb-5
-                "
-              >
-                {item.title}
-              </h3>
-
-
-
-              {/* Description */}
-              <p
-                className="
-                text-gray-600
-                text-sm
-                leading-6
-                text-center
-                "
-              >
-                {item.description}
-              </p>
-
-
-
-              {/* Button */}
-              <button
-                className="
-                mt-8
-                w-full
-                border-2
-                border-blue-600
-                text-blue-600
-                py-2
-                rounded-md
-                font-semibold
-                transition-all
-                duration-300
-                hover:bg-blue-600
-                hover:text-white
-                "
-              >
-                EXPLORE !
-              </button>
-
-
-            </div>
-
-          )
-
-        })}
+            );
+          })}
+        </div>
 
       </div>
-
-
     </section>
   );
 }

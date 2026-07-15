@@ -1,50 +1,82 @@
-import heroImage from "../assets/images/building2.png";
+import heroImage from "../assets/images/iem_.jpg";
 
 export default function Hero() {
   return (
     <section
-      className="
-        relative
-        min-h-[480px]
-        bg-cover
-        bg-center
-      "
+      className="relative min-h-screen flex items-center overflow-hidden"
       style={{
         backgroundImage: `url(${heroImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#0B3D91]/75"></div>
 
-      <div className="absolute inset-0 bg-[#0B3D91]/70"></div>
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 w-full flex flex-col lg:flex-row items-center justify-between min-h-screen">
 
-      
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 flex justify-between items-center">
-    
-        <div className="max-w-2xl text-white">
-          <p className="uppercase font-semibold mb-4">
-            Department of IT | IEM Kolkata
-          </p>
+        {/* Left Content */}
+        <div className="max-w-3xl text-white text-center lg:text-left">
 
-          <h1 className="text-3xl font-bold leading-tight">
+          <span
+            className="
+              inline-block
+              px-5
+              py-2
+              rounded-full
+              border
+              border-white/30
+              text-sm
+              font-semibold
+              tracking-widest
+              mb-6
+            "
+          >
+            DEPARTMENT OF IT | IEM KOLKATA
+          </span>
+
+          <h1
+            className="
+              text-5xl
+              md:text-7xl
+              font-extrabold
+              leading-tight
+              mb-6
+            "
+          >
             Department of
+            <br />
             Information Technology
           </h1>
 
-          <p className="mt-5 text-xl text-white/90">
+          <p
+            className="
+              text-lg
+              md:text-2xl
+              text-white/90
+              max-w-2xl
+              mb-10
+            "
+          >
             Shaping the engineers of tomorrow through
-            research, innovation, and excellence.
+            research, innovation and excellence.
           </p>
 
-          <div className="flex gap-4 mt-8">
+          <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
             <button
               className="
                 bg-[#0B3D91]
                 hover:bg-white
                 hover:text-[#0B3D91]
+                text-white
                 px-8
-                py-3
-                rounded-lg
+                py-4
+                rounded-xl
                 font-semibold
-                transition
+                transition-all
+                duration-300
               "
             >
               Explore Programs
@@ -54,12 +86,15 @@ export default function Hero() {
               className="
                 border-2
                 border-white
+                text-white
                 px-8
-                py-3
-                rounded-lg
+                py-4
+                rounded-xl
+                font-semibold
                 hover:bg-white
                 hover:text-[#0B3D91]
-                transition
+                transition-all
+                duration-300
               "
             >
               View Research
@@ -67,37 +102,38 @@ export default function Hero() {
           </div>
         </div>
 
-        
+        {/* Right Stats Card */}
         <div
           className="
             bg-white
-            w-60
-            h-48
-            rounded-2xl
-            shadow-xl
-            p-5
+            rounded-3xl
+            shadow-2xl
+            p-8
+            w-80
+            mt-12
+            lg:mt-0
             text-center
           "
         >
-          <h2 className="text-5xl font-bold text-[#0B3D91]">
+          <h2 className="text-6xl font-bold text-[#0B3D91]">
             915
           </h2>
 
-          <p className="uppercase text-gray-500 mt-2 text-sm">
+          <p className="uppercase text-gray-500 mt-3 text-sm">
             Students Enrolled
           </p>
 
-          <hr className="my-3" />
+          <hr className="my-6 border-gray-300" />
 
-          <h2 className="text-4xl font-bold text-[#0B3D91]">
+          <h2 className="text-5xl font-bold text-[#0B3D91]">
             180+
           </h2>
 
-          <p className="uppercase text-gray-500 mt-2 text-sm">
+          <p className="uppercase text-gray-500 mt-3 text-sm">
             Research Publications
           </p>
         </div>
       </div>
     </section>
   );
-} 
+}

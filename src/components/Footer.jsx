@@ -18,27 +18,17 @@ export default function Footer() {
       <div className="bg-[#0B3D91] text-white text-sm">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
 
-          <div>
-            <h2 className="text-3xl font-semibold text-white">
-              Newsletter - Stay tuned and get the latest updates
-            </h2>
-
-            <p className="text-white mt-2">
-              Stay updated with the latest trends and innovations in technology.
-            </p>
-          </div>
-
-
           <div className="flex items-center gap-3">
+            
+
+           <div className="flex items-center gap-3">
             <input
-              type="email"
-              placeholder="Enter email address"
-              className="w-72 px-5 py-3 rounded-md outline-none text-gray-700"
+              
+              className="w-72 px-5 py-3 rounded-md outline-none "
             />
 
-            <button className="bg-white p-3 rounded-md text-blue-700 hover:bg-blue-100 transition">
-              <Send size={22} />
-            </button>
+          </div>
+
           </div>
 
         </div>

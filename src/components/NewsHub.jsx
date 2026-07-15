@@ -8,34 +8,7 @@ export default function NewsHub() {
   const [time, setTime] = useState("");
   const [date, setDate] = useState("");
 
-  useEffect(() => {
-    const updateClock = () => {
-      const now = new Date();
-
-      setTime(
-        now.toLocaleTimeString("en-IN", {
-          hour: "2-digit",
-          minute: "2-digit",
-          second: "2-digit",
-        })
-      );
-
-      setDate(
-        now.toLocaleDateString("en-IN", {
-          weekday: "long",
-          day: "numeric",
-          month: "long",
-          year: "numeric",
-        })
-      );
-    };
-
-    updateClock();
-
-    const interval = setInterval(updateClock, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
+ 
 
   const news = [
     {
@@ -58,25 +31,16 @@ export default function NewsHub() {
   return (
     <section className="bg-[#061F52F] py-10">
       <div className="max-w-7xl  mx-auto px-6">
-        {/* Heading */}
-        <div className="text-center">
-  <h3 className="text-4xl md:text-5xl font-semibold text-[#0B3D91] leading-tight">
+ 
+       <div className="text-center mb-20">
+  <h2 className="text-4xl md:text-5xl font-bold text-[#0B3D91]">
     THE WHAT'S-HAPPENING-HERE HUB
-  </h3>
-</div>
-        {/* Time & Date */}
-        <div className="bg-white rounded-3xl shadow-md p-6 mb-12 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center gap-3 text-[#0B3D91] font-semibold">
-            <Clock size={22} />
-            <span className="text-xl">{time}</span>
-          </div>
+  </h2>
 
-          <div className="flex items-center gap-3 text-gray-600 mt-6 md:mt-0 md:ml-10">
-  <CalendarDays size={22} />
-  <span className="font-medium">{date}</span>
+  <div className="w-40 h-1 bg-[#0B3D91] mx-auto mt-4 rounded-full"></div>
 </div>
-        </div>
-
+        
+        
         {/* News Cards */}
         <div className="grid lg:grid-cols-2 gap-10">
           {news.map((item, index) => (
