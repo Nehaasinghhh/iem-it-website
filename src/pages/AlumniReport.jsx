@@ -1,12 +1,12 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-import slide1 from "../assets/images/slide1.png";
-import slide2 from "../assets/images/slide2.png";
-import slide3 from "../assets/images/slide3.png";
-import slide4 from "../assets/images/slide4.png";
-import slide5 from "../assets/images/slide5.png";
-import slide6 from "../assets/images/slide6.png";
+import slide1 from "../assets/images/Slide1.png";
+import slide2 from "../assets/images/Slide2.png";
+import slide3 from "../assets/images/Slide3.png";
+import slide4 from "../assets/images/Slide4.png";
+import slide5 from "../assets/images/Slide5.png";
+import slide6 from "../assets/images/Slide6.png";
 
 const alumniData = [
   {
