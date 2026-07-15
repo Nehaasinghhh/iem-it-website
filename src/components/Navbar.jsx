@@ -50,7 +50,7 @@ export default function Navbar() {
       dropdown: [
         { name: "Placement", path: "/placement" },
         { name: "IEM IEPC", path: "/iem-iepc" },
-        { name: "Hack", path: "/hack" },
+        { name: "IEM HackOasis", path: "/IEMHackOasis" },
         { name: "Assignments", path: "/assignments" },
         { name: "Student Achievement", path: "/student-achievement" },
         { name: "Department Events", path: "/department-events" },
@@ -65,9 +65,12 @@ export default function Navbar() {
     {
       name: "Innovation & Initiatives",
       dropdown: [
-        { name: "Innovation", path: "/innovation" },
         { name: "Student Publication", path: "/student-publication" },
+       
+        { name: "Faculty Publication", path: "/faculty-publication" },
         { name: "Alumni Report", path: "/alumni-report" },
+        
+        { name: "Annual Report", path: "/annual-report" },
       ],
     },
   ];

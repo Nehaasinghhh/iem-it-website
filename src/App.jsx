@@ -15,14 +15,13 @@ import POPEOPSO from "./pages/POPEOPSO";
 
 import Placement from "./pages/Placement";
 import IEMIEPC from "./pages/IEMIEPC";
-import Hack from "./pages/Hack";
+import IEMHackOasis from "./pages/IEMHackOasis";
 import Assignments from "./pages/Assignments";
 import StudentAchievement from "./pages/StudentAchievement";
 import DepartmentEvents from "./pages/DepartmentEvents";
 
 import FacultyPublication from "./pages/FacultyPublication";
 import AnnualReport from "./pages/AnnualReport";
-
 import StudentPublication from "./pages/StudentPublication";
 import AlumniReport from "./pages/AlumniReport";
 
@@ -34,6 +33,7 @@ export default function App() {
       <ScrollToTop />
 
       <Routes>
+        {/* Main Pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/academics" element={<Academics />} />
@@ -44,26 +44,46 @@ export default function App() {
         <Route path="/faculty" element={<Faculty />} />
         <Route path="/innovation" element={<Innovation />} />
         <Route path="/contact" element={<ContactPage />} />
+
+        {/* About Dropdown */}
         <Route path="/vision-mission" element={<VisionMission />} />
+        <Route path="/po-peo-pso" element={<POPEOPSO />} />
+
+        {/* Students Dropdown */}
+        <Route path="/placement" element={<Placement />} />
+        <Route path="/assignments" element={<Assignments />} />
         <Route
-  path="/curriculum"
-  element={<Curriculum />}
-/>
-<Route path="/po-peo-pso" element={<POPEOPSO />} />
+          path="/student-achievement"
+          element={<StudentAchievement />}
+        />
 
-<Route path="/placement" element={<Placement />} />
-<Route path="/iem-iepc" element={<IEMIEPC />} />
-<Route path="/hack" element={<Hack />} />
-<Route path="/assignments" element={<Assignments />} />
-<Route path="/student-achievement" element={<StudentAchievement />} />
-<Route path="/department-events" element={<DepartmentEvents />} />
+        {/* Innovation Dropdown */}
+        <Route path="/iem-iepc" element={<IEMIEPC />} />
+        <Route path="/hack" element={<IEMHackOasis />} />
+        <Route
+          path="/department-events"
+          element={<DepartmentEvents />}
+        />
 
-<Route path="/faculty-publication" element={<FacultyPublication />} />
-<Route path="/annual-report" element={<AnnualReport />} />
+        {/* Faculty Dropdown */}
+        <Route
+          path="/faculty-publication"
+          element={<FacultyPublication />}
+        />
+        <Route
+          path="/annual-report"
+          element={<AnnualReport />}
+        />
 
-<Route path="/student-publication" element={<StudentPublication />} />
-<Route path="/alumni-report" element={<AlumniReport />} />
-  
+        {/* Alumni / Research */}
+        <Route
+          path="/student-publication"
+          element={<StudentPublication />}
+        />
+        <Route
+          path="/alumni-report"
+          element={<AlumniReport />}
+        />
       </Routes>
     </>
   );

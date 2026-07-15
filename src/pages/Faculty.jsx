@@ -1,3 +1,6 @@
+
+
+
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -449,7 +452,7 @@ export default function Faculty() {
                   <div className="bg-white rounded-2xl shadow-md border border-blue-200 p-5 text-center w-[240px] mx-auto">
 
                     <img
-                      src={kaushikImg}
+                      src={koushikImg}
                       alt=""
                       className="w-20 h-20 rounded-full mx-auto border-4 border-blue-700 mb-4 object-cover"
                     />
