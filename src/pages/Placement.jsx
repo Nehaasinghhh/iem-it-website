@@ -131,7 +131,7 @@ export default function Placement() {
 
                 {/* Company Name */}
 
-                <div className="bg-blue-700 py-4">
+                <div className="bg-blue-900 py-4">
 
                   <h3 className="text-xl font-bold text-white text-center">
                     {company.name}
@@ -164,7 +164,7 @@ export default function Placement() {
                   <span
                     className="
                       inline-block
-                      bg-blue-700
+                      bg-blue-900
                       text-white
                       px-6
                       py-3
