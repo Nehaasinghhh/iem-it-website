@@ -21,32 +21,39 @@ export default function Assignments() {
       files: [
         {
           title: "AI Notes",
-          link: "https://your-link-here.com",
+          link: "https://it.iem.edu.in/pdfs/study_mats/aiml/AI_notes.pdf",
         },
         {
           title: "Russell & Norvig AI",
-          link: "https://aima.cs.berkeley.edu/",
+          link: "https://it.iem.edu.in/pdfs/study_mats/aiml/AI_Russell_Norvig.pdf",
         },
         {
           title: "Knowledge Representation",
-          link: "https://your-link-here.com",
+          link: "https://it.iem.edu.in/pdfs/study_mats/aiml/Knowledge_representation.pdf",
         },
         {
           title: "Machine Learning - Tom Mitchell",
-          link: "https://www.cs.cmu.edu/~tom/mlbook.html",
+          link: "https://it.iem.edu.in/pdfs/study_mats/aiml/M1-Machine-Learning-Tom-Mitchell_.pdf",
         },
         {
           title: "ML3A",
-          link: "https://your-link-here.com",
+          link: "https://it.iem.edu.in/pdfs/study_mats/aiml/ML3A.pdf",
           
         },
         {
+          title: "LDA",
+          link: "https://it.iem.edu.in/pdfs/study_mats/aiml/LDA.pdf",
+          
+        },
+        
+        
+        {
           title: "PCA",
-          link: "https://your-link-here.com",
+          link: "https://it.iem.edu.in/pdfs/study_mats/aiml/PCA.pdf",
         },
         {
           title: "SVD",
-          link: "https://your-link-here.com",
+          link: "https://it.iem.edu.in/pdfs/study_mats/aiml/SVD.pdf",
         },
       ],
     },
@@ -56,43 +63,40 @@ export default function Assignments() {
       files: [
          {
       title: "Java Fundamentals ",
-      link: "YOUR_PDF_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/ap(oops)/1_Java%20Fundamentals.pdf",
     },
     {
       title: "Polymorphism in JAVA",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/ap(oops)/2_Polymorphism%20in%20JAVA.pdf",
     },
     {
       title: "Exception Handling in JAVA",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/ap(oops)/3_Exception%20Handling%20in%20JAVA.pdf",
     },
     {
       title: "User Interface Design (Applet & Swing)",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/ap(oops)/4_User%20Interface%20Design%20(Applet%20&%20Swing).pdf",
     },
-    {
-      title: "Java Class Notes",
-      link: "YOUR_LINK",
-    },
+    
     {
       title: "OOP Module 1",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/ap(oops)/OOP_M1.pdf",
     },
     {
       title: "OOP Module 2",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/ap(oops)/OOP_M2.pdf",
     },
     {
       title: "OOP Module 3",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/ap(oops)/OOP_M3.pdf",
     },
     {
       title: "OOP Module 4",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/ap(oops)/OOP_M4.pdf",
     },
     {
       title: "OOP Module 5",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/ap(oops)/OOP_M5.pdf",
     },
       ],
     },
@@ -102,19 +106,19 @@ export default function Assignments() {
       files: [
         {
           title: "COA Division Algorithm",
-          link: "https://your-link-here.com",
+          link: "https://it.iem.edu.in/pdfs/study_mats/coa/Coa_division_algorithm.pdf",
         },
          {
           title: "COA Adder",
-          link: "https://your-link-here.com",
+          link: "https://it.iem.edu.in/pdfs/study_mats/coa/coa_adder.pdf",
         },
          {
           title: "COA Module2",
-          link: "https://your-link-here.com",
+          link: "https://it.iem.edu.in/pdfs/study_mats/coa/Coa_mod2.pdf",
         },
          {
           title: "COA Multiplication",
-          link: "https://your-link-here.com",
+          link: "https://it.iem.edu.in/pdfs/study_mats/coa/coa_multiplication.pdf",
         },
       ],
     },
@@ -124,43 +128,43 @@ export default function Assignments() {
       files: [
         {
       title: "Assignment on Propositional Logic",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/discrete_mathematics/Assignment%20on%20Propositional%20Logic.pdf",
     },
     {
       title: "Assignment on Propositional Logic 2",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/discrete_mathematics/Assignment%20on%20Propositional%20Logic2.pdf",
     },
     {
       title: "Boolean Algebra - Assignment",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/discrete_mathematics/Boolean%20Algebra%20-%20Assignment.pdf",
     },
     {
       title: "CNF & DNF - Propositional Logic",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/discrete_mathematics/CNF%20&%20DNF%20-Propositional%20Logic.pdf",
     },
     {
       title: "Detailed Proof Techniques in Discrete Mathematics",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/discrete_mathematics/Detailed%20Proof%20Techniques%20Discrete%20Mathematics..pdf",
     },
     {
       title: "Notes on Boolean Algebra",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/discrete_mathematics/Notes%20on%20Boolean%20Algebra.pdf",
     },
     {
       title: "Problems on Pigeonhole Principle",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/discrete_mathematics/Problems%20on%20Pigeonhole%20Principle.pdf",
     },
     {
       title: "Solution Problems on Pigeonhole Principle",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/discrete_mathematics/Solution%20Problems%20on%20Pigeonhole%20Principle.pdf",
     },
     {
       title: "Syntax and Semantics",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/discrete_mathematics/Syntax%20and%20Semantics.pdf",
     },
     {
       title: "Types of Proofs - Predicate Logic",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/study_mats/discrete_mathematics/Types%20of%20Proofs-Predicate%20Logic-Discrete%20Mathematics.pdf",
     },
       ],
     },
@@ -170,11 +174,11 @@ export default function Assignments() {
       files: [
         {
           title: "ESS Module 1",
-          link: "https://your-link-here.com",
+          link: "https://it.iem.edu.in/pdfs/study_mats/ess/ess_mod1.pdf",
         },
         {
           title: "ESS Module 2",
-          link: "https://your-link-here.com",
+          link: "https://it.iem.edu.in/pdfs/study_mats/ess/ess_mod2.pdf",
         },
 
       ],
@@ -188,19 +192,19 @@ export default function Assignments() {
         
         {
       title: "Decision Tree Algorithm",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AIML_LAB/decision_tree_algo.pdf",
     },
     {
       title: "K-Nearest Neighbors (KNN)",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AIML_LAB/knn.pdf",
     },
     {
       title: "Search - Water Jug Problem",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AIML_LAB/search-water-jug-handout.pdf",
     },
     {
       title: "The A* Algorithm",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AIML_LAB/The%20Astar_Algorithm.pdf",
     },
       ],
     },
@@ -210,35 +214,35 @@ export default function Assignments() {
       files: [
         {
       title: "Assignment 1",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AP(OOPS)%20LAB/A1.pdf",
     },
     {
       title: "Assignment 2",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AP(OOPS)%20LAB/A2.pdf",
     },
     {
       title: "Assignment 3",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AP(OOPS)%20LAB/A3.pdf",
     },
     {
       title: "Assignment 4",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AP(OOPS)%20LAB/A4.pdf",
     },
     {
       title: "Assignment 5",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AP(OOPS)%20LAB/A5.pdf",
     },
     {
       title: "Assignment 6",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AP(OOPS)%20LAB/A6.pdf",
     },
     {
       title: "Assignment 7",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AP(OOPS)%20LAB/A7.pdf",
     },
     {
       title: "Git Guide",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/AP(OOPS)%20LAB/git.pdf",
     },
       ],
     },
@@ -248,27 +252,27 @@ export default function Assignments() {
       files: [
         {
       title: "Assignment 1 - Graph Traversal",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/DAA%20LAB/ASSIGNMENT%201_%20GRAPH%20TRAVERSAL.pdf",
     },
     {
       title: "Assignment 2 - Spanning Tree on Weighted Graph",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/DAA%20LAB/ASSIGNMENT%202_%20Spanning%20tree%20finding%20on%20a%20weighted%20graph.pdf",
     },
     {
       title: "Assignment 3 - Binary Search Variations",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/DAA%20LAB/ASSIGNMENT3_Binary%20Search%20Variations.pdf",
     },
     {
       title: "Assignment 4 - Sorting Variations",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/DAA%20LAB/ASSIGNMENT_4_SORTING%20VARIATIONS.pdf",
     },
     {
       title: "Assignment 5 - Chain Matrix Multiplication",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/DAA%20LAB/ASSIGNMENT5_Chain_Matrix_Multi.pdf",
     },
     {
       title: "Assignment 6 - 0/1 Knapsack",
-      link: "YOUR_LINK",
+      link: "https://it.iem.edu.in/pdfs/Assignments/DAA%20LAB/ASSIGNMENT%206_01_Knapsack.pdf",
     },
       ],
     },
