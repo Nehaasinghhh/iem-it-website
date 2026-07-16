@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import hero1 from "../assets/images/bg_1.jpg";
 import hero2 from "../assets/images/bg_2.jpeg";
@@ -72,7 +73,7 @@ export default function Stats() {
             </p>
 
             <div className="flex flex-wrap gap-5 mt-10">
-
+       <Link to="/student-achievement">
               <button
                 className="
                 bg-[#0B3D91]
@@ -93,24 +94,8 @@ export default function Stats() {
                 Student Corner
                 <ArrowRight size={18} />
               </button>
-
-              <button
-                className="
-                border-2
-                border-[#0B3D91]
-                text-[#0B3D91]
-                px-8
-                py-4
-                rounded-xl
-                font-semibold
-                hover:bg-[#0B3D91]
-                hover:text-white
-                transition-all
-                duration-300
-                "
-              >
-                Know More
-              </button>
+          </Link>
+             
 
             </div>
           </div>

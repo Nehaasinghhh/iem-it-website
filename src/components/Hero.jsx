@@ -1,4 +1,5 @@
 import heroImage from "../assets/images/iem_.jpg";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -65,6 +66,11 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <a
+  href="https://exam.iem.edu.in/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
             <button
               className="
                 bg-[#0B3D91]
@@ -79,26 +85,10 @@ export default function Hero() {
                 duration-300
               "
             >
-              Explore Programs
+              Admission Open  
             </button>
-
-            <button
-              className="
-                border-2
-                border-white
-                text-white
-                px-8
-                py-4
-                rounded-xl
-                font-semibold
-                hover:bg-white
-                hover:text-[#0B3D91]
-                transition-all
-                duration-300
-              "
-            >
-              View Research
-            </button>
+           
+                </a>
           </div>
         </div>
 
