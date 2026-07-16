@@ -94,14 +94,22 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           
           {/* Logo */}
-          <div className="flex items-center gap-4">
-            <img
-              src={logo1}
-              alt="IEM"
-              className="w-16 h-16 object-contain"
-            />
-          </div>
+         {/* Logo + Department Name */}
+<div className="flex items-center gap-4">
 
+  <img
+    src={logo1}
+    alt="IEM"
+    className="w-16 h-16 object-contain"
+  />
+
+  <div className="hidden md:block leading-tight">
+    <h2 className="text-xl font-bold text-[#0B3D91]">
+      Information Technology Departmant 
+    </h2>
+  </div>
+
+</div>
           {/* Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-10 text-gray-700">
             {navItems.map((item) => (
