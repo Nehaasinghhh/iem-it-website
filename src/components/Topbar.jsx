@@ -16,11 +16,7 @@ const topLinks = [
     href: "https://recruitment.iem.edu.in/",
     external: true,
   },
-  {
-    label: "News & Events",
-    href: "#news",
-    external: false,
-  },
+  
 ];
 
 export default function TopBar() {
@@ -53,7 +49,7 @@ export default function TopBar() {
 
           <div className="hidden lg:flex items-center gap-2 text-white/80">
             <MapPin size={14} className="text-yellow-400" />
-            New Town, Kolkata, West Bengal 700160
+            Salt Lake, Kolkata, West Bengal 700160
           </div>
 
         </div>
