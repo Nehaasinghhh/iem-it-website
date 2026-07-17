@@ -121,19 +121,19 @@ export default function FacultySection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
 
-            {assistantProfessors.map((item, index) => (
+           {assistantProfessors.slice(0, assistantProfessors.length - 3).map((item, index) => (
 
-              <div key={index} className="flex justify-center">
+  <div key={index} className="flex justify-center">
 
-                <FacultyCard
-                  image={item.image}
-                  name={item.name}
-                  designation={item.designation}
-                />
+    <FacultyCard
+      image={item.image}
+      name={item.name}
+      designation={item.designation}
+    />
 
-              </div>
+  </div>
 
-            ))}
+))}
 
           </div>
 
