@@ -27,7 +27,7 @@ export default function DepartmentalEvents() {
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-600 text-white py-20">
+      <section className="bg-gradient-to-r from-blue-900 via-blue-900 to-blue-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h1 className="text-4xl md:text-5xl font-bold mb-5">

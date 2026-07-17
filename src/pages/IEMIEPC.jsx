@@ -239,7 +239,7 @@ export default function IEMICDC() {
           <div className="text-center mt-20">
 
             <a
-              href="https://iemicdc.org/"
+              href="https://easychair.org/cfp/iem-icdc2025"
               target="_blank"
               rel="noopener noreferrer"
               className="

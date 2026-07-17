@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import oracle from "../assets/placement/oracle.png";
 import ibm from "../assets/placement/IBM.png";
 import tcs from "../assets/placement/tcs.png";
-import eq from "../assets/placement/download.png";
+import eq from "../assets/placement/eq.jpg";
 import tismo from "../assets/placement/tismo.png";
 import jman from "../assets/placement/Jman.png";
 import nev from "../assets/placement/nev.jpg";
