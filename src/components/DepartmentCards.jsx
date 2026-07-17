@@ -4,8 +4,10 @@ import {
   GraduationCap,
   LibraryBig,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function DepartmentCards() {
+  const navigate = useNavigate();
   const departments = [
     {
       title: "CAMPUS",
@@ -18,13 +20,16 @@ export default function DepartmentCards() {
       icon: UsersRound,
       description:
         "The educational group has strong placement cell. Four placement officers under the chairmanship of the Institute’s director work as placement cell. Very effective Campus Interview is a regular feature of the institute.",
-    },
+    
+      path:"/placement",
+      },
     {
       title: "FACULTY",
       icon: GraduationCap,
       description:
         "The educational group believes that combination of good teachers and good students is the basic and most important aspect for achieving academic excellence. Our faculty members bring the best learning experience for students.",
-    },
+          path:"/faculty",
+      },
     {
       title: "DIGITAL LIBRARY",
       icon: LibraryBig,
@@ -132,6 +137,7 @@ export default function DepartmentCards() {
 
                 {/* Button */}
                 <button
+                onClick={() => navigate(item.path)}
                   className="
                   mt-8
                   w-full
