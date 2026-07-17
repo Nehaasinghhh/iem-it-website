@@ -9,29 +9,27 @@ import {
 
 export default function FacultySection() {
   return (
-    <div className="mt-16 animate-fade-in">
+    <div className="mt-16">
 
-      {/* PAGE TITLE */}
+      {/* ================= TITLE ================= */}
 
-      <div className="text-center mb-14">
-        <h2 className="text-4xl font-bold text-violet-700">
+      <div className="text-center mb-16">
+        <h2 className="text-5xl font-bold text-blue-800">
           IT Faculty List
         </h2>
 
-        <div className="w-72 h-1 bg-gradient-to-r from-violet-600 to-blue-500 mx-auto mt-4 rounded-full"></div>
+        <div className="w-80 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></div>
       </div>
 
-      {/* =========================
-          HEAD OF DEPARTMENT
-      ========================== */}
+      {/* ================= HOD ================= */}
 
-      <div className="mb-20">
+      <section className="mb-24">
 
-        <h3 className="text-center text-3xl font-bold uppercase text-slate-800">
-          Head Of Department
+        <h3 className="text-3xl font-bold text-center uppercase text-blue-900">
+          Head of Department
         </h3>
 
-        <div className="w-72 h-1 bg-blue-500 mx-auto mt-3 mb-10"></div>
+        <div className="w-72 h-1 bg-blue-600 rounded-full mx-auto mt-3 mb-12"></div>
 
         <div className="flex justify-center">
 
@@ -39,104 +37,109 @@ export default function FacultySection() {
             image={hod.image}
             name={hod.name}
             designation={hod.designation}
-            cardColor="bg-white"
-            borderColor="border-violet-500"
           />
 
         </div>
 
-      </div>
+      </section>
 
-      {/* =========================
-            PROFESSORS
-      ========================== */}
+      {/* ================= PROFESSORS ================= */}
 
-      <div className="mb-20">
+      <section className="mb-24">
 
-        <h3 className="text-center text-3xl font-bold uppercase text-slate-800">
+        <h3 className="text-3xl font-bold text-center uppercase text-blue-900">
           Professors
         </h3>
 
-        <div className="w-48 h-1 bg-blue-500 mx-auto mt-3 mb-10"></div>
+        <div className="w-56 h-1 bg-blue-600 rounded-full mx-auto mt-3 mb-12"></div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
 
           {professors.map((item, index) => (
-            <FacultyCard
-              key={index}
-              image={item.image}
-              name={item.name}
-              designation={item.designation}
-              cardColor="bg-blue-50"
-              borderColor="border-blue-500"
-            />
+
+            <div key={index} className="flex justify-center">
+
+              <FacultyCard
+                image={item.image}
+                name={item.name}
+                designation={item.designation}
+              />
+
+            </div>
+
           ))}
 
         </div>
 
-      </div>
+      </section>
 
-      {/* =========================
-         ASSOCIATE PROFESSORS
-      ========================== */}
+      {/* ================= ASSOCIATE PROFESSORS ================= */}
 
-      <div className="mb-20">
+      <section className="mb-24">
 
-        <h3 className="text-center text-3xl font-bold uppercase text-slate-800">
+        <h3 className="text-3xl font-bold text-center uppercase text-blue-900">
           Associate Professors
         </h3>
 
-        <div className="w-72 h-1 bg-blue-500 mx-auto mt-3 mb-10"></div>
+        <div className="w-72 h-1 bg-blue-600 rounded-full mx-auto mt-3 mb-12"></div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+        <div className="max-w-6xl mx-auto">
 
-          {associateProfessors.map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
 
-            <FacultyCard
-              key={index}
-              image={item.image}
-              name={item.name}
-              designation={item.designation}
-              cardColor="bg-green-50"
-              borderColor="border-green-500"
-            />
+            {associateProfessors.map((item, index) => (
 
-          ))}
+              <div key={index} className="flex justify-center">
+
+                <FacultyCard
+                  image={item.image}
+                  name={item.name}
+                  designation={item.designation}
+                />
+
+              </div>
+
+            ))}
+
+          </div>
 
         </div>
 
-      </div>
+      </section>
 
-      {/* =========================
-        ASSISTANT PROFESSORS
-      ========================== */}
+      {/* ================= ASSISTANT PROFESSORS ================= */}
 
-      <div className="mb-10">
+      <section className="mb-10">
 
-        <h3 className="text-center text-3xl font-bold uppercase text-slate-800">
+        <h3 className="text-3xl font-bold text-center uppercase text-blue-900">
           Assistant Professors
         </h3>
 
-        <div className="w-72 h-1 bg-blue-500 mx-auto mt-3 mb-10"></div>
+        <div className="w-72 h-1 bg-blue-600 rounded-full mx-auto mt-3 mb-12"></div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+        <div className="max-w-6xl mx-auto">
 
-          {assistantProfessors.map((item, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
 
-            <FacultyCard
-              key={index}
-              image={item.image}
-              name={item.name}
-              designation={item.designation}
-              cardColor="bg-orange-50"
-              borderColor="border-orange-500"
-            />
+            {assistantProfessors.map((item, index) => (
 
-          ))}
+              <div key={index} className="flex justify-center">
+
+                <FacultyCard
+                  image={item.image}
+                  name={item.name}
+                  designation={item.designation}
+                />
+
+              </div>
+
+            ))}
+
+          </div>
 
         </div>
 
-      </div>
+      </section>
 
     </div>
   );

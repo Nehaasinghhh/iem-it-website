@@ -41,7 +41,8 @@ export default function Faculty() {
     <>
       <Navbar />
 
-       <section className="bg-gradient-to-b from-blue-50 via-white to-blue-100 py-20 px-6">
+       <section className="bg-gradient-to-b from-blue-50
+        via-white to-blue-100 py-20 px-6">
 
       {/* Heading */}
       <div className="text-center mb-16">
@@ -49,14 +50,19 @@ export default function Faculty() {
           Department of Information Technology
         </h2>
 
-        <div className="w-80 h-1 bg-blue-700 mx-auto mt-4 rounded-full"></div>
+        <div className="w-80 h-1 bg-blue-700 mx-auto mt-4 
+        rounded-full"></div>
       </div>
 
       {/* Faculty Cards */}
-      <div className="flex flex-col items-center gap-16">
+      <div className="flex flex-col items-center gap-20">
 
         {/* HOD Card */}
-        <div className="bg-white rounded-3xl border-2 border-blue-200 shadow-xl w-[340px] p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:scale-105 hover:shadow-blue-300 hover:shadow-2xl">
+        <div className="bg-white rounded-3xl border-2 
+         border-blue-200 shadow-xl w-[340px] p-8 
+         text-center transition-all duration-500 
+         hover:-translate-y-3 hover:scale-105 hover:shadow-blue-300
+          hover:shadow-2xl">
 
           <img
             src={hodImage}
@@ -128,8 +134,18 @@ export default function Faculty() {
 
     </div>
 
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
-
+    <div
+  className="
+    grid
+    grid-cols-1
+    md:grid-cols-2
+    lg:grid-cols-3
+    gap-12
+    justify-items-center
+    max-w-5xl
+    mx-auto
+  "
+>
         {associateProfessors.map((faculty, index) => (
 
             <div
@@ -177,8 +193,18 @@ export default function Faculty() {
 
     </div>
 
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
-
+    <div
+  className="
+    grid
+    grid-cols-1
+    md:grid-cols-2
+    lg:grid-cols-3
+    gap-12
+    justify-items-center
+    max-w-5xl
+    mx-auto
+  "
+>
         {assistantProfessors.map((faculty, index) => (
 
             <div

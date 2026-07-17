@@ -9,49 +9,74 @@ export default function FacultyCard({
   return (
     <div
       className="
-        w-[250px]
-        min-h-[360px]
-        bg-white
-        border
-        border-blue-200
-        rounded-2xl
-        shadow-lg
-        hover:shadow-2xl
-        hover:-translate-y-2
-        transition-all
-        duration-300
-        p-8
-        text-center
-      "
+      w-full
+      max-w-[290px]
+      bg-white
+      rounded-3xl
+      border
+      border-blue-200
+      shadow-lg
+      overflow-hidden
+      transition-all
+      duration-300
+      hover:-translate-y-2
+      hover:shadow-2xl
+      hover:border-blue-600
+    "
     >
-      <img
-        src={image}
-        alt={name}
-        className="
-          w-36
-          h-36
+      {/* Top Blue Strip */}
+
+     
+
+      {/* Image */}
+
+      <div className="pt-8">
+
+        <img
+          src={image}
+          alt={name}
+          className="
+          w-32
+          h-32
           rounded-full
           object-cover
-          mx-auto
-          border-4
+          border-[5px]
           border-blue-600
-          shadow-md
+          mx-auto
+          shadow-lg
         "
-      />
+        />
 
-      <h3 className="text-2xl font-bold text-slate-800 mt-6">
-        {name}
-      </h3>
+      </div>
 
-      {subtitle && (
-        <p className="text-blue-700 font-semibold mt-3 text-lg">
-          {subtitle}
+      {/* Content */}
+
+      <div className="px-6 py-8 text-center">
+
+        <h3 className="text-xl font-bold text-blue-900 leading-8">
+
+          {name}
+
+        </h3>
+
+        {subtitle && (
+
+          <p className="mt-3 text-blue-700 font-semibold">
+
+            {subtitle}
+
+          </p>
+
+        )}
+
+        <p className="mt-4 text-gray-600 leading-7">
+
+          {designation}
+
         </p>
-      )}
 
-      <p className="text-gray-600 mt-3 leading-7">
-        {designation}
-      </p>
+      </div>
+
     </div>
   );
 }
